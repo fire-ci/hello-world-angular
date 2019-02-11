@@ -3,5 +3,5 @@ steps:
       name: build
       image: alpeware/chrome-headless-trunk
       commands:
-        - yarn
-        - yarn test-single-run
+        - npm
+        - npm test-single-run
