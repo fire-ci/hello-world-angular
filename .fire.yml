@@ -1,7 +1,7 @@
 steps:
   - step:
       name: build
-      image: node
+      image: justinribeiro/chrome-headless
       commands:
         - yarn
         - yarn test-single-run
