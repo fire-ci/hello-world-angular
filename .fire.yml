@@ -1,7 +1,7 @@
 steps:
   - step:
       name: build
-      image: alpeware/chrome-headless-trunk
+      image: geekykaran/headless-chrome-node-docker
       commands:
-        - npm
-        - npm test-single-run
+        - yarn
+        - yarn test-single-run
