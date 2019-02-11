@@ -16,7 +16,14 @@ module.exports = function(config) {
 
     frameworks: ['jasmine'],
 
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadlessNoSandbox'],
+
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
 
     plugins: [
       'karma-chrome-launcher',
